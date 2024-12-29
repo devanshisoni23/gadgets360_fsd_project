@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            position: relative; /* Set position to relative */
+        }
+        .search-bar {
+    margin-left: auto;
+    width: 300px;
+    position: relative;
+}
+        
+
+        .image-container {
+            display: inline-block;
+            margin-right: 20px; 
+            text-align: center; 
+        }
+        .image-caption {
+            margin-top: 10px; 
+        }
+
+        /* Flexbox for layout */
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Adjust image container width for responsive layout */
+        .image-row .image-container {
+            flex: 0 0 calc(33.33% - 20px); /* Three images per row, accounting for margin */
+            margin: 10px; /* Margin around each image */
+        }
+
+        /* Adjust image width for responsiveness */
+        .image-row img {
+            width: 100%; /* Make the image fill its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    <script src="nav.js"></script>
+
+     <div class="image-row">
+        <div class="image-container">
+            <img src="https://www.coindesk.com/resizer/EfWhowAQD2IZ49nLlCHoqwNSRro=/1056x594/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/6MLC6M43OZFWTIWOZ54O6UT354.jpg" alt="Iphone 15 pro max">
+            <div class="image-caption">Newly Issued Gaming Token Exploited on Blast With $4.6M Drained</div>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://www.coindesk.com/resizer/RT1JoIUrTCYdkuBtXRwgSBgq2Zs=/1056x594/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/A5Y4UY25S5FYNMZVK7LPG4GM5U.jpg" alt="Oneplus 12r blue">
+            <div class="image-caption">Want to Track the Speculative Frenzy in Bitcoin Market, Here’s How</div>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://www.coindesk.com/resizer/LzZOBJ7r2avuZUTYKirLV4-cn-o=/1056x594/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/2NBXX3LSLJATZPZQQC4SF5VYBI.jpg" alt="Realme narzo 70 pro">
+            <div class="image-caption">The Bitcoin Halving Really Is Different This Time</div>
+        </div>
+    </div>
+    
+    <div class="image-row">
+        <div class="image-container">
+            <img src="https://www.coindesk.com/resizer/C6H6NFlMR8SG9qO8qvr2JGbAxAY=/1056x594/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/3VPVBEAFU5HLVA3HZDL2K3CEKQ.jpg" alt="Vivo V30 DB">
+            <div class="image-caption">Bitcoin’s Slump Sees Crypto Bulls Staring at $440M in Liquidations</div>
+        </div>
+        <div class="image-container">
+            <img src="https://crypto.news/app/uploads/2023/10/crypto-news-USDC-stablecoin04.webp" alt="Vivo V30 DB">
+            <div class="image-caption">On March 21, the market capitalization of stablecoins reached $150 billion for the first time in 18 months</div>
+        </div>
+        <div class="image-container">
+            <img src="https://crypto.news/app/uploads/2024/03/crypto-news-Ethereum-option006.webp" alt="Vivo V30 DB">
+            <div class="image-caption">Core Ethereum developers have started the “pump the gas” campaign to raise the blockchain’s gas limit from 30 million to 40 million</div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script language="javascript" type="text/javascript">
+            
+    function openSearchTab() {
+        // Get the search input value
+        var searchText = document.getElementById("searchInput").value;
+        // Encode the search text to make it URL-safe
+        var encodedSearchText = encodeURIComponent(searchText);
+        // Construct the search URL
+        var searchUrl = "nav1.html" + encodedSearchText;
+        // Redirect the user to the search results page
+        window.location.href = searchUrl;
+    }
+
+
+        </script>
+    </head>
+</html>

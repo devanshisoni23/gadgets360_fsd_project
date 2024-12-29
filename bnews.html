@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+               position: relative; /* Set position to relative */
+        }
+        .search-bar {
+    margin-left: auto;
+    width: 300px;
+    position: relative;
+}
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the items in the container */
+            gap: 20px; /* Space between items */
+        }
+        .image-container {
+            flex: 0 1 calc(25% - 20px); /* Adjusts the item width to fit 4 items per row minus gap */
+            text-align: center; 
+        }
+        .image-container img {
+            width: 100%; /* Responsive image scaling */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .image-caption {
+            margin-top: 10px; 
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 1200px) {
+            .image-container {
+                flex: 0 1 calc(33.333% - 20px); /* 3 items per row on medium screens */
+            }
+        }
+
+        @media (max-width: 900px) {
+            .image-container {
+                flex: 0 1 calc(50% - 20px); /* 2 items per row on small screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-container {
+                flex: 0 1 calc(100% - 20px); /* 1 item per row on extra small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    <script src="nav.js"></script>
+
+<div class="image-gallery">
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-108656156,width-650,height-488,imgsize-2625602,resizemode-75/investors-exit-cash-exits_thumb-image_ettech.jpg" alt="Ipo news">
+        <div class="image-caption">VCs looking for partial exits, investors eyeing IPO-bound firms push up secondary deals</div>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-108663198,width-650,height-488,imgsize-29702,resizemode-75/jpg-.jpg" alt="Silicon valley news">
+        <div class="image-caption">DryLuru: India’s Silicon Valley either looking up at the skies or awaiting tankers for water</div>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-108682156,width-210,height-158,imgsize-113958,resizemode-75/tech-view-nifty-faces-key-hurdle-at-20-ema-what-traders-should-do-on-friday.jpg" alt="Tech news">
+        <div class="image-caption">Tech View: Nifty faces key hurdle at 20-EMA. What traders should do on Friday</div>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-108664294,width-210,height-158,imgsize-27060,resizemode-75/indian-block-trades-are-headed-toward-best-quarter-in-14-years.jpg" alt="Trade news">
+        <div class="image-caption">Best quarter in 14 years: Block trades raise $7.1 bn as Tata, BAT cash in</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-108662879,width-210,height-158,imgsize-54240,resizemode-75/big-movers-on-d-street-what-should-investors-do-with-lic-zomato-and-bharti-airtel.jpg" alt="Investors news">
+        <div class="image-caption">Big movers on D-Street: What should investors do with LIC, Zomato and Bharti Airtel?</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-108643602,width-300,height-225,imgsize-41794,resizemode-75/cms-43.jpg" alt="Job news">
+        <div class="image-caption">60% students choose job security over pay hikes: Unstop 2024 Talent Report</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-108648914,width-300,height-225,imgsize-22570,resizemode-75/cms-44-1.jpg" alt="Immigrant news">
+        <div class="image-caption">Are immigrants the secret to America's economic success?</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://img.etimg.com/thumb/msid-107732469,width-300,height-225,imgsize-43882,resizemode-75/a-first-in-80-years-more-indians-than-americans-write-gre-test.jpg" alt="Sat news">
+        <div class="image-caption">A first in 80 years: More Indians than Americans write GRE test</div>
+    </div>
+</div>
+
+</body>
+</html>

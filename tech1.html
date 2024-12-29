@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            position: relative; /* Set position to relative */
+        }
+
+        .search-bar {
+    margin-left: auto;
+    width: 300px;
+    position: relative;
+}
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the items in the container */
+            gap: 20px; /* Space between items */
+        }
+        .image-container {
+            flex: 0 1 calc(25% - 20px); /* Adjusts the item width to fit 4 items per row minus gap */
+            text-align: center; 
+        }
+        .image-container img {
+            width: 100%; /* Responsive image scaling */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .image-caption {
+            margin-top: 10px; 
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 1200px) {
+            .image-container {
+                flex: 0 1 calc(33.333% - 20px); /* 3 items per row on medium screens */
+            }
+        }
+
+        @media (max-width: 900px) {
+            .image-container {
+                flex: 0 1 calc(50% - 20px); /* 2 items per row on small screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-container {
+                flex: 0 1 calc(100% - 20px); /* 1 item per row on extra small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    <script src="nav.js"></script>
+
+<div class="image-gallery">
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/Apple.jpg?w=640" alt="Apple news">
+        <div class="image-caption">Apple has kept an illegal monopoly over smartphones in US, Justice Department says in antitrust suit</div>
+     </div>
+    
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/meta-1600-1.jpg?w=640" alt="Meta news">
+            <div class="image-caption">Apple, Meta, Google set to face EU Digital Markets Act probes, sources say</div>
+        </div>
+    
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/pc-laptop-generic-featured.jpg?w=640" alt="Acer news">
+            <div class="image-caption">Acer and Xiaomi see explosive growth in Indian PC and tablet markets: Canalys</div>
+        </div>
+    
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/Microsoft-20240321.jpg?w=640" alt="Apple news" >
+            <div class="image-caption">Microsoft to help integrate AI into Sri Lankan school curriculum from grade 8</div>
+       </div>
+
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/snapdragon-7plus-gen3.jpg?w=640" alt="Snapdragon news">
+            <div class="image-caption">Qualcomm introduces Snapdragon 7+ Gen 3 to deliver on-device AI experiences on mid-range phones</div>
+         </div>
+
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/AI-Pin.jpg?w=640" alt="ai pin news">
+            <div class="image-caption">Humane’s Ai Pin could do these 9 incredible things to replace smartphones</div>
+         </div>
+
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/cod-warzone-mobile-featured.jpg?w=640" alt="Warzone news">
+        <div class="image-caption">COD Warzone Mobile ‘Peak’ graphics: Can your phone handle it?</div>
+     </div>
+
+    <div class="image-container">
+        <img src="https://images.indianexpress.com/2024/03/Truecaller-Express-Photo.jpg?w=640" alt="Truecaller news">
+            <div class="image-caption">New Truecaller feature uses AI to detect and block spam calls: Here’s how to enable it</div>
+        </div>
+</div>
+
+</body>
+</html>

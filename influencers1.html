@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            position: relative; /* Set position to relative */
+        }
+        .search-bar {
+    margin-left: auto;
+    width: 300px;
+    position: relative;
+}
+        
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the items in the container */
+            gap: 20px; /* Space between items */
+        }
+        .image-container {
+            flex: 0 1 calc(25% - 20px); /* Adjusts the item width to fit 4 items per row minus gap */
+            text-align: center; 
+        }
+        .image-container img {
+            width: 100%; /* Responsive image scaling */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .image-caption {
+            margin-top: 10px; 
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 1200px) {
+            .image-container {
+                flex: 0 1 calc(33.333% - 20px); /* 3 items per row on medium screens */
+            }
+        }
+
+        @media (max-width: 900px) {
+            .image-container {
+                flex: 0 1 calc(50% - 20px); /* 2 items per row on small screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-container {
+                flex: 0 1 calc(100% - 20px); /* 1 item per row on extra small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    <script src="nav.js"></script>
+
+<div class="image-gallery">
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2024-03/st07tm38_anupam-mittal-stuns-fans-with-intense-surya-namaskar-routine-watch_625x300_21_March_24.jpg?downsize=930:*" alt="Iphone 15 pro max">
+        <div class="image-caption">Anupam Mittal Stuns Fans with Intense Surya Namaskar Routine</div>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2024-03/efd89meo_uorfi-javed-dazzles-in-solar-system-attire-netizens-say-science-project_625x300_21_March_24.jpg?downsize=930:*" alt="Oneplus 12r blue">
+        <div class="image-caption">Uorfi Javed Dazzles in Solar System Attire; Netizens Say, Science Project </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2024-03/2rlef9rg_uttar-pradesh-youtuber-gets-engaged-to-iranian-girl-we-completed-the-legal-procedure_625x300_19_March_24.jpg?downsize=930:*" alt="Realme narzo 70 pro">
+        <div class="image-caption">Uttar Pradesh YouTuber Gets Engaged To Iranian Girl</div>
+     </div>
+    
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2024-03/95ebjmoo_hilarious-raj-grover-shows-parents-banter-during-exam-days_625x300_20_March_24.jpg?downsize=930:*" alt="Vivo V30 DB">
+        <div class="image-caption">Hilarious! Raj Grover Shows Parents' Banter During Exam Days</div>
+     </div>
+
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2024-03/7cn8b9eo_sadhguru-undergoes-emergency-brain-surgery-steady-progress-and-recovering_625x300_21_March_24.jpg?downsize=930:*" alt="Vivo V30 DB">
+        <div class="image-caption">Sadhguru Undergoes Emergency Brain Surgery: Steady Progress and Recovering</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2023-06/bpr8qt1_ranveer-allahbadia_625x300_20_June_23.jpg?downsize=930:*" alt="Vivo V30 DB">
+        <div class="image-caption">Ranveer Allahbadia's Podcast with Dr. S Jaishankar Crosses 3M Views in 72 Hours</div>
+     </div>
+
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2023-05/bfee7d2_influencer_625x300_28_May_23.jpg?downsize=930:*" alt="Vivo V30 DB">
+        <div class="image-caption">Jannat Zubair Rahmani and Brother Ayaan Zubair's Dance Video Goes Viral on Social Media</div>
+     </div>
+
+    <div class="image-container">
+        <img src="https://c.ndtvimg.com/2023-11/7q5up5j_sibling-shenanigans-unleashed-yuvraj-dua-exposes-the-younger-brigade_625x300_27_November_23.jpg?downsize=930:*" alt="Vivo V30 DB">
+        <div class="image-caption">Sibling Shenanigans Unleashed: Yuvraj Dua Exposes the Younger Brigade</div>
+   </div>
+</div>
+
+</body>
+</html>

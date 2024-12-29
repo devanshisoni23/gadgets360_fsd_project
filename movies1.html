@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            position: relative; /* Set position to relative */
+        }
+        .search-bar {
+    margin-left: auto;
+    width: 300px;
+    position: relative;
+}
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the items in the container */
+            gap: 20px; /* Space between items */
+        }
+        .image-container {
+            flex: 0 1 calc(25% - 20px); /* Adjusts the item width to fit 4 items per row minus gap */
+            text-align: center; 
+        }
+        .image-container img {
+            width: 100%; /* Responsive image scaling */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .image-caption {
+            margin-top: 10px; 
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 1200px) {
+            .image-container {
+                flex: 0 1 calc(33.333% - 20px); /* 3 items per row on medium screens */
+            }
+        }
+
+        @media (max-width: 900px) {
+            .image-container {
+                flex: 0 1 calc(50% - 20px); /* 2 items per row on small screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-container {
+                flex: 0 1 calc(100% - 20px); /* 1 item per row on extra small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    <script src="nav.js"></script>
+
+<div class="image-gallery">
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108686770,imgsize-18664,width-400,resizemode-4/108686770.jpg" alt="Iphone 15 pro max">
+        <div class="image-caption">Shahid Kapoor to play Chhatrapati Shivaji Maharaj in a film</div>
+    </div>
+    
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108687312,imgsize-53754,width-400,resizemode-4/108687312.jpg" alt="Oneplus 12r blue">
+            <div class="image-caption">House Of The Dragon' season 2 drops two trailers with release date</div>
+        </div>
+    
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108668517,imgsize-31310,width-400,resizemode-4/108668517.jpg" alt="Realme narzo 70 pro">
+        <div class="image-caption">Ilaiyaraaja shares the first look poster of 'Ilaiyaraaja</div>
+   </div>
+    
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108686274,imgsize-72368,width-400,resizemode-4/108686274.jpg" alt="Vivo V30 DB">
+            <div class="image-caption">Bipasha Basu's daughter Devi steals hearts at Alanna Panday's baby shower</div>
+         </div>
+
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108685729,imgsize-33578,width-400,resizemode-4/108685729.jpg" alt="Vivo V30 DB">
+        <div class="image-caption">Shraddha Kapoor shares pics of new outfit, says 'mummy ne kaan ke neeche bajaa diya'</div>
+     </div>
+
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108685421,imgsize-16358,width-400,resizemode-4/108685421.jpg" alt="Vivo V30 DB">
+        <div class="image-caption">Rani Mukerji says she values heartfelt recognition from audiences more than winning awards</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108685998,imgsize-48160,width-400,resizemode-4/108685998.jpg" alt="Vivo V30 DB">
+        <div class="image-caption">Randeep Hooda makes surprising revelations about Aishwarya Rai Bachchan in 'Sarbjit' eight years after the movie</div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://static.toiimg.com/thumb/msid-108682438,imgsize-33934,width-400,resizemode-4/108682438.jpg" alt="Vivo V30 DB">
+            <div class="image-caption">Gulshan Devaiah: Anurag Kashyap has contributed a great deal to my career</div>
+       </div>
+</div>
+
+</body>
+</html>
